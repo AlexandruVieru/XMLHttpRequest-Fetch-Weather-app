@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="fetch.js" defer></script>
+<body>
+<!-- //Table style -->
+
+<style>
+    td {
+        width: auto;
+        height: auto;
+        border: 1px solid black;
+    }
+    table {
+        border: 1px solid black;
+        border-spacing: 0;
+    }
+</style>
+<h1>Weather Report Fetch</h1>
+<section id="control-center">
+    <button id="horsensData">Request Horsens data</button>
+    <button id="aarhusData">Request Aarhus data</button>
+    <button id="copenhagenData">Request Copenhagen data</button>
+    <button id="last5">Load last five days</button>
+    <button id="tempMinMax"> minimum and maximum temperature for the last 5 days</button>
+    <button id="totalPrec">Total precipitation for the last 5 days</button>
+    <button id="windSpeed">Average wind speed for last 5 days</button>
+    <button id="windDirection">Dominant wind direction last 5 days</button>
+    <button id="cloudAverage">Average cloud coverage for last 5 days</button>
+    <button id="forecastData">Forecast for next 24 hours</button>
+
+<p id="text"></p>
+<table>
+    <tbody id="Horsens">
+    <thead>
+    <tr>
+    </tr>
+    </thead>
+    </table>
+
+</section>
+</body>

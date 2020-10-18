@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="XHR.js" defer></script>
+<style>
+    td {
+        width: auto;
+        height: auto;
+        border: 1px solid black;
+    }
+    table {
+        border: 1px solid black;
+        border-spacing: 0;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Report XmlHttpRequest</title>
+</head>
+<body>
+
+<section id="control-center">
+    <h1>Weather Report XmlHttpRequest</h1>
+    <button id="getData">Horsens weather data</button>
+    <button id="aarhusxhr">Aarhus weather data</button>
+    <button id="copenhagenxhr">Request Copenhagen data</button>
+    <button id="last5xhr">Load last five days</button>
+    <button id="tempMinMaxxhr"> minimum and maximum temperature for the last 5 days</button>
+    <button id="totalPrecxhr">Total precipitation for the last 5 days</button>
+    <button id="windSpeedxhr">Average wind speed for last 5 days</button>
+    <button id="windDirectionxhr">Dominant wind direction last 5 days</button>
+    <button id="cloudAveragexhr">Average cloud coverage for last 5 days</button>
+    <button id="forecastDataxhr">Forecast for next 24 hours</button>
+    <p id="textXhr"></p>
+<table id="xhr">
+    <tbody>
+    <thead>
+    <tr>
+    </tr>
+    </thead>
+</table>
+</section>
+</body>
+</html>

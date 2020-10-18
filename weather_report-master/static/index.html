@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Report</title>
+</head>
+<body>
+<section id="control-center">
+  <button id="get-btn" onclick="init()">GET Data</button>
+  <p id="demo"></p>
+  <script>
+
+ function init(){
+   const request = new XMLHttpRequest()
+   request.onreadystatechange = function(){
+     if(this.readyState == 4 && this.status == 200){
+       document.getElementById("demo").innerHTML = this.responseText
+     }
+   }
+   request.open('GET', 'http://localhost:8080/data/Horsens', true)
+
+   request.send()
+ }
+  </script>
+</section>
+</body>
+</html>
